@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char shape;
+	int size,sa,ca;
+	printf("enter shape:\n");
+	scanf("%c",&shape);
+	printf("enter size:\n");
+	scanf("%d",&size);
+	if (shape=='s')
+	{
+		sa=size*size;
+		printf("area of square=%d\n",sa);
+	}
+	else
+	{
+		ca=3.14*(size*size);
+		printf("area of circle=%d\n",ca);
+	}
+}
