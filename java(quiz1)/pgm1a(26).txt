@@ -1,0 +1,12 @@
+package quiz1;
+import java.util.Scanner;
+public class Quiz1 {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter a integer");
+        int a=obj.nextInt();
+        System.out.println("the integer is: "+a);
+        obj.close();
+    }
+    
+}

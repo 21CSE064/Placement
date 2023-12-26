@@ -1,0 +1,15 @@
+package quiz1avg;
+import java.util.Scanner;
+public class Quiz1avg {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter a floating point number 1:");
+        float a=obj.nextFloat();
+        System.out.println("enter a floating point number 2:");
+        float b=obj.nextFloat();
+        float c=(a+b)/2;
+        System.out.println("the average of numbers is: "+c);
+        obj.close();
+    }
+    
+}
