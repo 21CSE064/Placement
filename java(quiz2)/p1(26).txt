@@ -1,0 +1,54 @@
+package array;
+import java.util.Scanner;
+public class Array {
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter size of array:");
+        int n=obj.nextInt();
+        int[] a=new int[n];
+        int c=0,m=0,k=0,d=0;
+        for(int i=0;i<n;i++)
+        {
+            System.out.println("enter numbers:");
+            int ele=obj.nextInt();
+            a[i]=ele;
+        }
+        for(int j=0;j<n;j++)
+        {
+            if(a[j] %2==0)
+            {
+                m=m+1;
+            }
+            else
+            {
+                k=k+1;
+            }
+        }
+         int[] e=new int[m];
+        int[] o=new int[k];
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]%2==0)
+            {
+                e[c]=a[i];
+                c=c+1;
+            }
+            else
+            {
+                o[d]=a[i];
+                d=d+1;
+            }
+        }
+        System.out.println("even array is: ");
+        for(int i:e)
+        {
+            System.out.print(i);
+        }
+        System.out.println();
+         System.out.println("odd array is: ");
+         for(int i:o)
+        {
+            System.out.print(i);
+        }  
+    } 
+}
