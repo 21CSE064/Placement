@@ -1,0 +1,17 @@
+package naturalnumbers;
+
+import java.util.Scanner;
+
+public class Naturalnumbers {
+    public static void main(String[] args) {
+       Scanner obj=new Scanner(System.in);
+       int a;
+       System.out.println("enter N:");
+       a=obj.nextInt();
+       for(int i=1;i<=a;i++)
+       {
+           System.out.print(i+" ");
+       }
+    }
+    
+}
